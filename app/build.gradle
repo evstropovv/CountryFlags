@@ -7,12 +7,21 @@ android {
         applicationId "com.vasyaevstropov.countryflags"
         minSdkVersion 15
         targetSdkVersion 29
-        versionCode 3
-        versionName "1.1"
+        versionCode 4
+        versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        defaultSignature {
+            keyAlias 'vasyaevstropov'
+            keyPassword 'Serreal1'
+            storeFile file('keystore.jks')
+            storePassword 'Serreal1'
+        }
     }
     buildTypes {
         release {
+            signingConfig signingConfigs.defaultSignature
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
