@@ -25,7 +25,7 @@ jobs:
       - name: Upload Android Release to Play Store
         uses: r0adkll/upload-google-play@v1
         with:
-          serviceAccountJson: /home/runner/work/CountryFlags/CountryFlags/src/app/api-8490955703710887886-757307-1cc0979701ef.json
+          serviceAccountJson: src/app/api-8490955703710887886-757307-1cc0979701ef.json
           packageName: com.example.MyApp
-          releaseFile: /home/runner/work/CountryFlags/CountryFlags/src/app/outputs/apk/release/app-release.apk
+          releaseFile: src/app/build/outputs/apk/release/app-release.apk
           track: beta
