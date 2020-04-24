@@ -26,6 +26,6 @@ jobs:
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJson: src/app/api-8490955703710887886-757307-1cc0979701ef.json
-          packageName: com.example.MyApp
+          packageName: com.vasyaevstropov.countryflags
           releaseFile: src/app/build/outputs/apk/release/app-release.apk
           track: beta
