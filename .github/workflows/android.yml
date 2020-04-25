@@ -25,7 +25,7 @@ jobs:
       - name: Upload Android Release to Play Store
         uses: r0adkll/upload-google-play@v1
         with:
-          serviceAccountJson: src/app/api-8490955703710887886-757307-1cc0979701ef1.json
+          serviceAccountJson: src/app/api-8490955703710887886-757307-1cc0979701ef.json
           packageName: com.vasyaevstropov.countryflags
           releaseFile: src/app/build/outputs/apk/release/app-release.apk
           track: beta
